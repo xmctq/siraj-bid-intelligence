@@ -1,6 +1,6 @@
 # Siraj · Bid Intelligence
 
-**Live app:** _LIVE_URL_  ·  **No login needed.** Three sample tenders are already analyzed.
+**Live app:** https://siraj-bid-intelligence.vercel.app  ·  **Repo:** https://github.com/xmctq/siraj-bid-intelligence  ·  **No login needed.** Three sample tenders are already analyzed.
 
 Siraj is an AI workspace for reviewing government tenders and RFPs. Upload a tender PDF and, in under a minute, Siraj extracts the key facts, eligibility criteria, deadlines, deliverables and technical requirements; generates an interactive compliance checklist; flags risks, missing information and disqualifying requirements; and answers questions about the document with **page-level citations** you can click to see the highlighted source text.
 
