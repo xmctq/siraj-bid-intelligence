@@ -24,7 +24,8 @@ const ip = (n: number) => ({ "x-forwarded-for": `10.0.0.${n}` });
 
 function uploadRequest(bytes: Uint8Array, name: string, headers: Record<string, string> = ip(1)) {
   const form = new FormData();
-  form.append("file", new File([bytes], name, { type: "application/pdf" }));
+  // Copy into a plain ArrayBuffer-backed view (BlobPart typing in newer @types/node).
+  form.append("file", new File([new Uint8Array(bytes)], name, { type: "application/pdf" }));
   return new Request("http://test/api/tenders", { method: "POST", body: form, headers });
 }
 
